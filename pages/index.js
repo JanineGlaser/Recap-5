@@ -2,13 +2,13 @@ import ArtPieces from "../components/ArtPieces";
 import styled from "styled-components";
 import Spotlight from "../components/Spotlight";
 
-export default function HomePage({ pieces }) {
+export default function SpotlightPage({ pieces }) {
   return (
     <>
       <StyledHeadline>Famous Art Gallery</StyledHeadline>
       <StyledSpotlightHeadline>Todays Spotlight</StyledSpotlightHeadline>
       <Spotlight pieces={pieces} />
-      <ArtPieces pieces={pieces} />;
+      {/* <ArtPieces pieces={pieces} />; */}
     </>
   );
 }
