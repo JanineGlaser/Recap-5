@@ -1,7 +1,7 @@
 import useSWR from "swr";
-import ArtPieces from "./components/ArtPieces";
+import ArtPieces from "../components/ArtPieces";
 import styled from "styled-components";
-import Spotlight from "./components/Spotlight";
+import Spotlight from "../components/Spotlight";
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
 
