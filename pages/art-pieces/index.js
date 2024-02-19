@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ArtPiecePreview from "../../components/ArtPiecePreview";
 
 export default function ArtPieces({ pieces }) {
@@ -5,12 +6,15 @@ export default function ArtPieces({ pieces }) {
   return (
     <>
       {pieces.map((piece) => (
-        <ArtPiecePreview
-          key={piece.slug}
-          image={piece.imageSource}
-          artist={piece.artist}
-          title={piece.name}
-        />
+        <>
+          <ArtPiecePreview
+            key={piece.slug}
+            image={piece.imageSource}
+            artist={piece.artist}
+            title={piece.name}
+            slug={piece.slug}
+          />
+        </>
       ))}
     </>
   );

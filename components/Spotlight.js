@@ -18,7 +18,11 @@ export default function Spotlight({ pieces }) {
 
   return (
     <>
-      <ArtPiecePreview image={spotlightImageSource} artist={spotlightArtist} />
+      <ArtPiecePreview
+        image={spotlightImageSource}
+        artist={spotlightArtist}
+        slug={randomPiece.slug}
+      />
     </>
   );
 }
