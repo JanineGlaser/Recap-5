@@ -1,5 +1,6 @@
 import useSWR from "swr";
 import ArtPieces from "./components/ArtPieces";
+import styled from "styled-components";
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
 
@@ -18,5 +19,14 @@ export default function HomePage() {
 
   console.log(data);
 
-  return <ArtPieces pieces={data} />;
+  return (
+    <>
+      <StyledHeadline>Famous Art Gallery</StyledHeadline>
+      <ArtPieces pieces={data} />;
+    </>
+  );
 }
+
+const StyledHeadline = styled.h1`
+  text-align: center;
+`;
