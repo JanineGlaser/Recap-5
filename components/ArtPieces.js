@@ -1,6 +1,7 @@
 import ArtPiecePreview from "./ArtPiecePreview";
 
 export default function ArtPieces({ pieces }) {
+  console.log(pieces);
   return (
     <>
       {pieces.map((piece) => (
